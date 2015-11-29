@@ -30,8 +30,9 @@ COPY Packages/wso2esb-${ESB_VERSION}.zip /opt
 RUN unzip /opt/wso2esb-${ESB_VERSION}.zip 
 RUN chmod +x /opt/wso2esb-${ESB_VERSION}/bin/wso2server.sh
 
-# Ports
+# Exposed Ports
 EXPOSE 9443 9763 8243 8280 
 
+# Container Startup Command
 CMD ["/opt/wso2esb-4.9.0/bin/wso2server.sh"]
 
