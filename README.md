@@ -7,7 +7,6 @@ The dockerfile will:
 
 * Copy `4.9.0 zip` to /otp from Packages directory.
 * Unzip the ESB 4.9.0 ZIP.
-* Remove the ESB 4.9.0 ZIP.
 * Expose the container port `9443`.
 * Set the ESB `wso2server.sh` start-up script as the container start-up command.
 
