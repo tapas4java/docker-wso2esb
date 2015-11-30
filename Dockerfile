@@ -16,7 +16,7 @@
 #
 # ------------------------------------------------------------------------
 
-FROM wso2-base:latest
+FROM anitech/wso2-base:latest
 
 MAINTAINER  Tapas Jena [tapas.friends@gmail.com]
 
