@@ -28,7 +28,8 @@ WORKDIR "/opt"
 # ESB Setup
 COPY Packages/wso2esb-${ESB_VERSION}.zip /opt
 RUN unzip /opt/wso2esb-${ESB_VERSION}.zip 
-RUN chmod +x /opt/wso2esb-${ESB_VERSION}/bin/wso2server.sh
+RUN chmod +x /opt/wso2esb-${ESB_VERSION}/bin/wso2server.sh && \
+    rm -f /opt/wso2esb-${ESB_VERSION}.zip
 
 # Exposed Ports
 EXPOSE 9443 9763 8243 8280 
